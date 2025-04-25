@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A&D Nusaraya Voyage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>A&D Nusaraya Voyage</h1>
+    <p>Perjalanan adalah Warisan</p>
+  </header>
+
+  <main>
+    <section id="pemesanan">
+      <h2>Formulir Pemesanan</h2>
+      <form onsubmit="return sendToWhatsApp();">
+        <label>Nama Lengkap:</label><br>
+        <input type="text" name="nama" required><br>
+        <label>Nomor WhatsApp:</label><br>
+        <input type="tel" name="wa" required><br>
+        <label>Tanggal Keberangkatan:</label><br>
+        <input type="date" name="tanggal" required><br>
+        <label>Jumlah Orang:</label><br>
+        <input type="number" name="jumlah" required><br>
+        <label>Tujuan Wisata:</label><br>
+        <input type="text" name="tujuan" required><br>
+        <label>Lokasi Penjemputan:</label><br>
+        <input type="text" name="penjemputan" required><br>
+        <label>Catatan Tambahan:</label><br>
+        <textarea name="catatan"></textarea><br>
+        <button type="submit">Kirim via WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="lokasi">
+      <h2>Lokasi Kami</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5898440368575!2d112.16391707504233!3d-7.832345779315128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78819f55ef1b0d%3A0x5b6ebc11e7e1c5a0!2sBlitar!5e0!3m2!1sen!2sid!4v1713943387193!5m2!1sen!2sid"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri Armada & Destinasi</h2>
+      <div class="galeri">
+        <img src="https://via.placeholder.com/300x200?text=Armada+1" alt="Armada 1">
+        <img src="https://via.placeholder.com/300x200?text=Destinasi+1" alt="Destinasi 1">
+        <img src="https://via.placeholder.com/300x200?text=Armada+2" alt="Armada 2">
+        <img src="https://via.placeholder.com/300x200?text=Destinasi+2" alt="Destinasi 2">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
